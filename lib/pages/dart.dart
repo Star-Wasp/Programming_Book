@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:new_project/customWidgets.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:new_project/pages/Dart/dartVariables.dart';
 
 class Dart extends StatelessWidget {
   const Dart({super.key});
@@ -30,11 +30,7 @@ class Dart extends StatelessWidget {
                   ),
                   Topics(
                     text: 'Variables',
-                    page: Scaffold(
-                      appBar: AppBar(
-                        title: Text('Variables'),
-                      ),
-                    ),
+                    page: Variables(),
                   ),
                   Topics(
                     text: 'Functions',
