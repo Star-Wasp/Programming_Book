@@ -44,3 +44,33 @@ class Topics extends StatelessWidget {
     );
   }
 }
+
+class Paragraph extends StatelessWidget {
+  const Paragraph({
+    super.key,
+    required this.title,
+    required this.body,
+  });
+
+  final String title;
+  final String body;
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Text(
+          title,
+          style: Theme.of(context).textTheme.headlineMedium,
+        ),
+        Text(
+          body,
+          style: Theme.of(context).textTheme.bodyMedium,
+        ),
+        SizedBox(
+          height: 30,
+        ),
+      ],
+    );
+  }
+}
