@@ -1,0 +1,43 @@
+import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+
+class AppColors {
+  static Color homeColor = Color.fromRGBO(0, 116, 211, 1);
+  static Color homeAccent = Color.fromRGBO(0, 140, 255, 1);
+  static Color homeAppBar = Color.fromRGBO(93, 182, 255, 1);
+  static Color titleColor = Color.fromRGBO(48, 56, 63, 1);
+  static Color textColor = Color.fromRGBO(0, 0, 0, 1);
+}
+
+ThemeData primaryTheme = ThemeData(
+  colorScheme: ColorScheme.fromSeed(seedColor: AppColors.homeColor),
+  scaffoldBackgroundColor: AppColors.homeAccent,
+  appBarTheme: AppBarTheme(
+    backgroundColor: AppColors.homeAppBar,
+    foregroundColor: AppColors.textColor,
+    surfaceTintColor: Colors.transparent,
+    centerTitle: true,
+  ),
+  textTheme: GoogleFonts.robotoSlabTextTheme(
+    TextTheme(
+      bodyMedium: TextStyle(
+        color: AppColors.textColor,
+        fontSize: 16,
+        letterSpacing: 1,
+        fontWeight: FontWeight.bold,
+      ),
+      headlineMedium: TextStyle(
+        color: AppColors.titleColor,
+        fontSize: 30,
+        fontWeight: FontWeight.bold,
+        letterSpacing: 1,
+      ),
+      titleMedium: TextStyle(
+        color: AppColors.titleColor,
+        fontSize: 20,
+        fontWeight: FontWeight.bold,
+        letterSpacing: 2,
+      ),
+    ),
+  ),
+);
