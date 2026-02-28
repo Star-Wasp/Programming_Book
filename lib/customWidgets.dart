@@ -6,10 +6,12 @@ class Topics extends StatelessWidget {
     super.key,
     required this.text,
     required this.page,
+    required this.color,
   });
 
   final String text;
   final Widget page;
+  final Color color;
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +20,7 @@ class Topics extends StatelessWidget {
       child: Container(
         height: 50,
         decoration: BoxDecoration(
-          color: const Color.fromARGB(255, 0, 215, 253),
+          color: color,
           border: Border.all(
             color: Colors.black,
           ),
