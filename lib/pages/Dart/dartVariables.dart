@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:new_project/customWidgets.dart';
 import 'package:new_project/theme.dart';
 
-class Variables extends StatelessWidget {
-  const Variables({super.key});
+class dartVariables extends StatelessWidget {
+  const dartVariables({super.key});
 
   @override
   Widget build(BuildContext context) {

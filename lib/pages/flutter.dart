@@ -1,26 +1,31 @@
 import 'package:flutter/material.dart';
 import 'package:new_project/customWidgets.dart';
-import 'package:new_project/pages/dart.dart';
-import 'package:new_project/pages/flutter.dart';
+import 'package:new_project/pages/Dart/dartForLoops.dart';
+import 'package:new_project/pages/Dart/dartFunctions.dart';
+import 'package:new_project/pages/Dart/dartMaps.dart';
+import 'package:new_project/pages/Dart/dartVariables.dart';
+import 'package:new_project/theme.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+class Flutter extends StatelessWidget {
+  const Flutter({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return Theme(
+      data: flutterTheme,
+      child: Scaffold(
         appBar: AppBar(
           title: Text(
-            '~ Home Page ~',
+            '~ FLUTTER ~',
             style: Theme.of(context).textTheme.titleMedium,
           ),
         ),
         body: Padding(
-          padding: EdgeInsets.all(20),
+          padding: EdgeInsets.all(40),
           child: Column(
             children: [
               Text(
-                'Choose your language:',
+                '~ TOPICS ~',
                 style: Theme.of(context).textTheme.headlineMedium,
               ),
               Expanded(
@@ -30,47 +35,39 @@ class HomePage extends StatelessWidget {
                       height: 20,
                     ),
                     Topics(
-                      text: 'Dart',
-                      page: Dart(),
-                      color: const Color.fromARGB(255, 2, 119, 215),
-                    ),
-                    Topics(
-                      text: 'Flutter',
-                      page: Flutter(),
-                      color: const Color.fromARGB(255, 2, 119, 215),
-                    ),
-                    Topics(
-                      text: 'Python',
+                      text: 'Main',
                       page: Scaffold(
                         appBar: AppBar(
-                          title: Text('Python'),
+                          title: Text('Main'),
                         ),
                       ),
-                      color: const Color.fromARGB(255, 2, 119, 215),
+                      color: Color.fromARGB(255, 24, 193, 1),
                     ),
                     Topics(
-                      text: 'Java Script',
+                      text: 'Widgets',
                       page: Scaffold(
                         appBar: AppBar(
-                          title: Text('Java Script'),
+                          title: Text('Widgets'),
                         ),
                       ),
-                      color: const Color.fromARGB(255, 2, 119, 215),
+                      color: Color.fromARGB(255, 24, 193, 1),
                     ),
                     Topics(
-                      text: 'Php',
+                      text: 'Custom Widgets',
                       page: Scaffold(
                         appBar: AppBar(
-                          title: Text('Php'),
+                          title: Text('Custom Widgets'),
                         ),
                       ),
-                      color: const Color.fromARGB(255, 2, 119, 215),
+                      color: Color.fromARGB(255, 24, 193, 1),
                     ),
                   ],
                 ),
-              )
+              ),
             ],
           ),
-        ));
+        ),
+      ),
+    );
   }
 }

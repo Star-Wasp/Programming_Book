@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:new_project/customWidgets.dart';
+import 'package:new_project/pages/Dart/dartForLoops.dart';
+import 'package:new_project/pages/Dart/dartFunctions.dart';
+import 'package:new_project/pages/Dart/dartMaps.dart';
 import 'package:new_project/pages/Dart/dartVariables.dart';
 import 'package:new_project/theme.dart';
 
@@ -13,7 +16,7 @@ class Dart extends StatelessWidget {
       child: Scaffold(
         appBar: AppBar(
           title: Text(
-            '~ The Great Book of Programming ~',
+            '~ DART ~',
             style: Theme.of(context).textTheme.titleMedium,
           ),
         ),
@@ -22,7 +25,7 @@ class Dart extends StatelessWidget {
           child: Column(
             children: [
               Text(
-                '~ DART TOPICS ~',
+                '~ TOPICS ~',
                 style: Theme.of(context).textTheme.headlineMedium,
               ),
               Expanded(
@@ -33,34 +36,22 @@ class Dart extends StatelessWidget {
                     ),
                     Topics(
                       text: 'Variables',
-                      page: Variables(),
+                      page: dartVariables(),
                       color: Color.fromARGB(255, 240, 0, 112),
                     ),
                     Topics(
                       text: 'Functions',
-                      page: Scaffold(
-                        appBar: AppBar(
-                          title: Text('Functions'),
-                        ),
-                      ),
+                      page: dartFunctions(),
                       color: Color.fromARGB(255, 240, 0, 112),
                     ),
                     Topics(
                       text: 'For Loops',
-                      page: Scaffold(
-                        appBar: AppBar(
-                          title: Text('For Loops'),
-                        ),
-                      ),
+                      page: Dartforloops(),
                       color: Color.fromARGB(255, 240, 0, 112),
                     ),
                     Topics(
                       text: 'Maps',
-                      page: Scaffold(
-                        appBar: AppBar(
-                          title: Text('Maps'),
-                        ),
-                      ),
+                      page: DartMaps(),
                       color: Color.fromARGB(255, 240, 0, 112),
                     ),
                   ],
