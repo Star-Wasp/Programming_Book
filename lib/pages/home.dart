@@ -31,7 +31,7 @@ class HomePage extends StatelessWidget {
                     Topics(
                       text: 'Dart',
                       page: Dart(),
-                      color: const Color.fromARGB(255, 1, 104, 188),
+                      color: const Color.fromARGB(255, 2, 119, 215),
                     ),
                     Topics(
                       text: 'Flutter',
@@ -40,7 +40,7 @@ class HomePage extends StatelessWidget {
                           title: Text('Flutter'),
                         ),
                       ),
-                      color: const Color.fromARGB(255, 1, 104, 188),
+                      color: const Color.fromARGB(255, 2, 119, 215),
                     ),
                     Topics(
                       text: 'Python',
@@ -49,7 +49,7 @@ class HomePage extends StatelessWidget {
                           title: Text('Python'),
                         ),
                       ),
-                      color: const Color.fromARGB(255, 1, 104, 188),
+                      color: const Color.fromARGB(255, 2, 119, 215),
                     ),
                     Topics(
                       text: 'Java Script',
@@ -58,7 +58,7 @@ class HomePage extends StatelessWidget {
                           title: Text('Java Script'),
                         ),
                       ),
-                      color: const Color.fromARGB(255, 1, 104, 188),
+                      color: const Color.fromARGB(255, 2, 119, 215),
                     ),
                     Topics(
                       text: 'Php',
@@ -67,7 +67,7 @@ class HomePage extends StatelessWidget {
                           title: Text('Php'),
                         ),
                       ),
-                      color: const Color.fromARGB(255, 1, 104, 188),
+                      color: const Color.fromARGB(255, 2, 119, 215),
                     ),
                   ],
                 ),

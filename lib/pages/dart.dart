@@ -34,7 +34,7 @@ class Dart extends StatelessWidget {
                     Topics(
                       text: 'Variables',
                       page: Variables(),
-                      color: Color.fromARGB(255, 218, 1, 102),
+                      color: Color.fromARGB(255, 240, 0, 112),
                     ),
                     Topics(
                       text: 'Functions',
@@ -43,7 +43,7 @@ class Dart extends StatelessWidget {
                           title: Text('Functions'),
                         ),
                       ),
-                      color: Color.fromARGB(255, 218, 1, 102),
+                      color: Color.fromARGB(255, 240, 0, 112),
                     ),
                     Topics(
                       text: 'For Loops',
@@ -52,7 +52,7 @@ class Dart extends StatelessWidget {
                           title: Text('For Loops'),
                         ),
                       ),
-                      color: Color.fromARGB(255, 218, 1, 102),
+                      color: Color.fromARGB(255, 240, 0, 112),
                     ),
                     Topics(
                       text: 'Maps',
@@ -61,7 +61,7 @@ class Dart extends StatelessWidget {
                           title: Text('Maps'),
                         ),
                       ),
-                      color: Color.fromARGB(255, 218, 1, 102),
+                      color: Color.fromARGB(255, 240, 0, 112),
                     ),
                   ],
                 ),

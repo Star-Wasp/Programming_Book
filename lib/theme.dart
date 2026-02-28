@@ -6,7 +6,7 @@ class AppColors {
   static Color homeAccent = Color.fromRGBO(0, 140, 255, 1);
   static Color homeAppBar = Color.fromRGBO(93, 182, 255, 1);
   static Color dartColor = Color.fromRGBO(184, 1, 74, 1);
-  static Color dartAccent = Color.fromRGBO(255, 2, 103, 1);
+  static Color dartAccent = Color.fromRGBO(251, 47, 128, 1);
   static Color dartAppBar = Color.fromRGBO(255, 69, 143, 1);
   static Color titleColor = Color.fromRGBO(48, 56, 63, 1);
   static Color textColor = Color.fromRGBO(0, 0, 0, 1);
