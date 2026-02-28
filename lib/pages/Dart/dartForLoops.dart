@@ -12,7 +12,7 @@ class Dartforloops extends StatelessWidget {
       child: Scaffold(
         appBar: AppBar(
           title: Text(
-            '~ Dart For Loops ~',
+            '~ Dart Data Types ~',
             style: Theme.of(context).textTheme.titleMedium,
           ),
         ),

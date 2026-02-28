@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:new_project/customWidgets.dart';
+import 'package:new_project/pages/Dart/dartDataTypes.dart';
 import 'package:new_project/pages/Dart/dartForLoops.dart';
 import 'package:new_project/pages/Dart/dartFunctions.dart';
 import 'package:new_project/pages/Dart/dartMaps.dart';
@@ -37,6 +38,11 @@ class Dart extends StatelessWidget {
                     Topics(
                       text: 'Variables',
                       page: dartVariables(),
+                      color: Color.fromARGB(255, 240, 0, 112),
+                    ),
+                    Topics(
+                      text: 'Data Types',
+                      page: DartDataTypes(),
                       color: Color.fromARGB(255, 240, 0, 112),
                     ),
                     Topics(
