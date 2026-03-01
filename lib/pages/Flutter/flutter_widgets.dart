@@ -1,15 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:new_project/customWidgets.dart';
-import 'package:new_project/pages/Dart/dartForLoops.dart';
-import 'package:new_project/pages/Dart/dartFunctions.dart';
-import 'package:new_project/pages/Dart/dartMaps.dart';
-import 'package:new_project/pages/Dart/dartVariables.dart';
-import 'package:new_project/pages/Flutter/flutter_widgets.dart';
-import 'package:new_project/pages/Flutter/main_func.dart';
 import 'package:new_project/theme.dart';
 
-class Flutter extends StatelessWidget {
-  const Flutter({super.key});
+class FlutterWidgets extends StatelessWidget {
+  const FlutterWidgets({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +12,7 @@ class Flutter extends StatelessWidget {
       child: Scaffold(
         appBar: AppBar(
           title: Text(
-            '~ FLUTTER ~',
+            '~ FLUTTER WIDGETS ~',
             style: Theme.of(context).textTheme.titleMedium,
           ),
         ),
@@ -27,7 +21,7 @@ class Flutter extends StatelessWidget {
           child: Column(
             children: [
               Text(
-                '~ TOPICS ~',
+                '~ SELECT WIDGET ~',
                 style: Theme.of(context).textTheme.headlineMedium,
               ),
               Expanded(
@@ -37,20 +31,28 @@ class Flutter extends StatelessWidget {
                       height: 20,
                     ),
                     Topics(
-                      text: 'Main',
-                      page: FlutterMain(),
-                      color: Color.fromARGB(255, 24, 193, 1),
-                    ),
-                    Topics(
-                      text: 'Widgets',
-                      page: FlutterWidgets(),
-                      color: Color.fromARGB(255, 24, 193, 1),
-                    ),
-                    Topics(
-                      text: 'Custom Widgets',
+                      text: 'MaterialApp()',
                       page: Scaffold(
                         appBar: AppBar(
-                          title: Text('Custom Widgets'),
+                          title: Text('~ MatterialApp() ~'),
+                        ),
+                      ),
+                      color: Color.fromARGB(255, 24, 193, 1),
+                    ),
+                    Topics(
+                      text: 'Scaffold()',
+                      page: Scaffold(
+                        appBar: AppBar(
+                          title: Text('~ Scaffold() ~'),
+                        ),
+                      ),
+                      color: Color.fromARGB(255, 24, 193, 1),
+                    ),
+                    Topics(
+                      text: 'Text()',
+                      page: Scaffold(
+                        appBar: AppBar(
+                          title: Text('~ Text() ~'),
                         ),
                       ),
                       color: Color.fromARGB(255, 24, 193, 1),
